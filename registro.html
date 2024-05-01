@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Se establece el idioma del documento como español -->
+<head>
+    <meta charset="UTF-8"> <!-- Se especifica la codificación de caracteres del documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Se establece la escala inicial para dispositivos móviles -->
+    <title>Registro de Usuario - ULEAM</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="registro.css"> <!-- Se enlaza la hoja de estilos externa -->
+</head>
+<body>
+    <div class="container"> <!-- Contenedor principal -->
+        <h1>Registro de Usuario</h1> <!-- Encabezado -->
+        <form id="registro-form"> <!-- Formulario de registro -->
+            <div class="campo"> <!-- Contenedor de cada campo -->
+                <label for="nombre">Nombre Completo:</label> <!-- Etiqueta del campo de nombre -->
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required> <!-- Campo de entrada para el nombre -->
+            </div>
+            <div class="campo">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" required> <!-- Campo de entrada para el correo electrónico -->
+            </div>
+            <div class="campo">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña" required> <!-- Campo de entrada para la contraseña -->
+                <span id="contrasena-error" class="error"></span> <!-- Elemento para mostrar mensajes de error de contraseña -->
+            </div>
+            <div class="campo">
+                <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" placeholder="Confirme su contraseña" required> <!-- Campo de entrada para confirmar la contraseña -->
+                <span id="confirmar-contrasena-error" class="error"></span> <!-- Elemento para mostrar mensajes de error de confirmación de contraseña -->
+            </div>
+            <button type="submit">Registrarse</button> <!-- Botón de envío del formulario -->
+        </form>
+    </div>
+
+    <script src="registro.js"></script> <!-- Se incluye el script de JavaScript -->
+</body>
+</html>
